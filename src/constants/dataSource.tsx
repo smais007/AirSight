@@ -1,0 +1,38 @@
+export const dataSources = [
+  {
+    name: "NASA TEMPO",
+    type: "Satellite Data",
+    description: "Tropospheric Emissions: Monitoring of Pollution instrument",
+    parameters: ["NO₂", "HCHO", "O₃", "SO₂"],
+    coverage: "North America",
+    resolution: "2.1 km × 4.4 km",
+    frequency: "Hourly",
+  },
+  {
+    name: "EPA AirNow",
+    type: "Ground Sensors",
+    description: "Real-time air quality measurements from monitoring stations",
+    parameters: ["PM2.5", "PM10", "O₃", "NO₂", "SO₂", "CO"],
+    coverage: "US & Canada",
+    resolution: "Point measurements",
+    frequency: "Hourly",
+  },
+  {
+    name: "WAQI",
+    type: "Global Network",
+    description: "World Air Quality Index project data",
+    parameters: ["PM2.5", "PM10", "O₃", "NO₂"],
+    coverage: "Global",
+    resolution: "City-level",
+    frequency: "Real-time",
+  },
+  {
+    name: "ECMWF",
+    type: "Weather Data",
+    description: "European Centre for Medium-Range Weather Forecasts",
+    parameters: ["Wind", "Temperature", "Humidity", "Pressure"],
+    coverage: "Global",
+    resolution: "9 km",
+    frequency: "6-hourly",
+  },
+];
