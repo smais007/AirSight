@@ -1,16 +1,14 @@
-import BackdropGradient from "@/components/global/backdrop-gradient";
+import Navbar from "@/components/navbar";
 
-const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
+const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="container mx-auto">
-      <BackdropGradient
-        className="w-1/2 h-2/6 opacity-40"
-        container=" items-center"
-      >
+    <div className="min-h-screen bg-black">
+      <Navbar />
+      <main className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
         {children}
-      </BackdropGradient>
+      </main>
     </div>
   );
 };
 
-export default LandingPageLayout;
+export default DashboardLayout;

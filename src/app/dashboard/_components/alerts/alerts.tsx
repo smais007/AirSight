@@ -24,8 +24,6 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import BackdropGradient from "@/components/global/backdrop-gradient";
-import { PolicyDashboard } from "@/components/policy";
-import { HealthImpactIndicator } from "./HealthImpactIndicator";
 
 const AlertsTab = () => {
   const [globalAlertsEnabled, setGlobalAlertsEnabled] = useState(true);
@@ -416,12 +414,6 @@ const AlertsTab = () => {
       </BackdropGradient>
 
       {/* Health Profile Information */}
-      <div className="p-8">
-        <PolicyDashboard baselineAQI={160} trafficSensitivity={0.6} />
-      </div>
-      <div className="p-8 space-y-6">
-        <HealthImpactIndicator aqi={219} />
-      </div>
     </div>
   );
 };
