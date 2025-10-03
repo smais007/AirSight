@@ -53,11 +53,8 @@ const Navbar: React.FC = () => {
               href="/dashboard"
               className="text-xl font-bold tracking-tight text-white"
             >
-              NSAC
+              AirSight
             </Link>
-            <span className="hidden text-sm text-gray-300 md:inline">
-              Network Status & Analytics
-            </span>
           </div>
 
           {/* Desktop Navigation */}
